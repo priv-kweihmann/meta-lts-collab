@@ -158,7 +158,7 @@ jobs:
 
       - name: Save downloads and sstate
         if: ${{ inputs.save-cache && steps.targets.outputs.build_targets != '' }}
-        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        uses: actions/cache/save@2c8a9bd7457de244a408f35966fab2fb45fda9c8
         with:
           path: |
             ${{ github.workspace }}/build/downloads
